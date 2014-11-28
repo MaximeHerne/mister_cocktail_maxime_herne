@@ -1,0 +1,7 @@
+<%= bootstrap_form_for(@cocktail) do |f| %>
+  <%= f.text_field :name %>
+  <%= f.number_field :doses %>
+  <%= f.select(:ingredients, options_for_select([['Lemon', 'lemon'], ['Mint Leaves', 'mint leaves'], ['Ice Cubes', 'ice cubes']]))%>
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
+
